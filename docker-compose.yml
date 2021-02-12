@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  twitch_clone:
+    container_name: twitch_clone
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    ports:
+      - 19000:19000
+      - 19001:19001
+    volumes:
+      - ./:/app/
