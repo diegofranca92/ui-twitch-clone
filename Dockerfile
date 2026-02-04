@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:25.6.0-bookworm
 LABEL version=1.2.1
 
 ENV ADB_IP="192.168.1.3"
